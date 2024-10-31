@@ -1,0 +1,10 @@
+alter = int(input("Bitte gib dein Alter ein: "))
+
+if alter < 12:
+    preis = 5
+elif 12 <= alter <= 17:
+    preis = 8
+else:
+    preis = 12
+
+print("Der Eintrittspreis beträgt:", preis, "Euro.")
