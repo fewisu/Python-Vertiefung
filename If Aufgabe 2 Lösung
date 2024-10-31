@@ -1,0 +1,6 @@
+passwort = input("Bitte das Passwort eingeben: ")
+
+if passwort == "geheim123":
+    print("Zugang gewährt.")
+else:
+    print("Zugang verweigert.")
