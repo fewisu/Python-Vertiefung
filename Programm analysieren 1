@@ -1,0 +1,12 @@
+preis = float(input("Bitte den Originalpreis des Produkts eingeben: "))
+rabatt_code = input("Bitte den Rabattcode eingeben (falls vorhanden): ")
+
+if rabatt_code == "SPAR20":
+    rabatt = preis * 0.20
+elif rabatt_code == "SPAR10":
+    rabatt = preis * 0.10
+else:
+    rabatt = 0
+
+endpreis = preis - rabatt
+print("Der Endpreis beträgt:", endpreis)
