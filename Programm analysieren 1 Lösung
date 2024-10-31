@@ -1,0 +1,12 @@
+preis = float(input("Bitte den Originalpreis des Produkts eingeben: "))  # Nutzer gibt den Originalpreis ein und speichert ihn als Dezimalzahl in 'preis'
+rabatt_code = input("Bitte den Rabattcode eingeben (falls vorhanden): ")  # Nutzer gibt den Rabattcode ein und speichert ihn als Zeichenkette in 'rabatt_code'
+
+if rabatt_code == "SPAR20":               # Wenn der Rabattcode 'SPAR20' eingegeben wurde,
+    rabatt = preis * 0.20                 # wird 20% des Preises als Rabatt berechnet
+elif rabatt_code == "SPAR10":             # Wenn der Rabattcode 'SPAR10' eingegeben wurde,
+    rabatt = preis * 0.10                 # wird 10% des Preises als Rabatt berechnet
+else:                                     # Wenn kein gültiger Rabattcode eingegeben wurde,
+    rabatt = 0                            # beträgt der Rabatt 0
+
+endpreis = preis - rabatt                 # Der Endpreis wird durch Abzug des Rabatts vom Originalpreis berechnet
+print("Der Endpreis beträgt:", endpreis)  # Der berechnete Endpreis wird ausgegeben
